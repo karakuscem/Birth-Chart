@@ -7,6 +7,12 @@ BirthChart is a web-application that calculates user's birth chart shows their d
 [kerykeion](https://github.com/g-battaglia/kerykeion)
 [aztro](https://github.com/sameerkumar18/aztro)
 
+## Demo
+
+I also upload this application to cloud (to be clearer to Heroku). You can check it out!
+
+[Birth Chart](https://birthchart.herokuapp.com)
+
 ## Description
 
 BirthChart calculates and displays the birth chart of the user in accordance with the information provided by the user and the chart selected. In addition, it also shows the user daily horoscope. Furthermore, with the information on the Homepage and About Astrology page, it is aimed for the user to have more information about Astrology and charts.
