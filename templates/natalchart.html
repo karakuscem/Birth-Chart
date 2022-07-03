@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Natal Chart
+{% endblock %}
+
+{% block main %}
+    <form action="/natalchart" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="name" name="name" placeholder="Name" type="text">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="year" name="year" placeholder="Year" type="number" min="0">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="month" name="month" placeholder="Month" type="number" min="0" max="12">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="day" name="day" placeholder="Day" type="number" min="1" max="31">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="hour" name="hour" placeholder="Hour" type="number" min="00" max="23">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="minute" name="minute" placeholder="Minute" type="number" min="0" max="59">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" id="birthplace" name="birthplace" placeholder="Birth Place" type="text">
+        </div>
+        <br>
+        <div>
+            <input class ="form-check-input" type="checkbox" id="save" name="save">
+            <label class ="form-check-label" for="save">Save to Database ?</label>
+        </div>
+        <br>
+        <button class="btn btn-primary" type="submit">Show Chart</button>
+    </form>
+{% endblock %}

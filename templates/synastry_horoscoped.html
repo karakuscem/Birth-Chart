@@ -1,0 +1,103 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Synastry Horoscope
+{% endblock %}
+
+{% block main %}
+<div class="alert alert-dismissible alert-success">
+    <strong>Click image</strong> to see full-size.
+</div>
+<br>
+<a href="{{  synastry_calculated  }}"><img src="{{  synastry_calculated  }}"   width="670" height= "471" class="center"></a>
+<br>
+<strong><p>Your relationship score is: {{  relation_score  }}</p></strong>
+<i><p class="text-muted">About scores:
+    - From 0 to 5 = Null relationship
+    - From 5 a 10 = Mediocre relationship
+    - From 10 to 15 = Important relationship
+    - From 15 to 20 = Very important relationship
+    - From 20 to su = Exceptional relationship</p></i>
+<div>
+    <br>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="card border-dark mb-3" style="max-width: 20rem;">
+                <div class="card-header">Today's Horoscope for {{ name }}</div>
+                <div class="card-body">
+                <h4 class="card-title">According to your Sun sign!</h4>
+                <p class="card-text">{{  first_description  }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card border-dark mb-3" style="max-width: 20rem;">
+                <div class="card-header">Today's Lucky Number for {{ name }}</div>
+                <div class="card-body">
+                <h4 class="card-title">Every sign has a lucky number!</h4>
+                <p class="card-text">Today's lucky number according to your Sun sign is: {{  first_lucky_number  }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card border-dark mb-3" style="max-width: 20rem;">
+                <div class="card-header">Today's Compatibility for {{ name }}</div>
+                <div class="card-body">
+                <h4 class="card-title">Which zodiac sign are you compatible with today ?</h4>
+                <p class="card-text">Today you are compatible with: {{  first_compatibility  }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card border-dark mb-3" style="max-width: 20rem;">
+                <div class="card-header">Current Mood for {{ name }}</div>
+                <div class="card-body">
+                <h4 class="card-title">How are you today ?</h4>
+                <p class="card-text">Today your mood is: {{  first_current_mood  }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <br>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="card border-dark mb-3" style="max-width: 20rem;">
+                <div class="card-header">Today's Horoscope for for {{ second_name }}</div>
+                <div class="card-body">
+                <h4 class="card-title">According to your Sun sign!</h4>
+                <p class="card-text">{{  second_description  }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card border-dark mb-3" style="max-width: 20rem;">
+                <div class="card-header">Today's Lucky Number for {{ second_name }}</div>
+                <div class="card-body">
+                <h4 class="card-title">Every sign has a lucky number!</h4>
+                <p class="card-text">Today's lucky number according to your Sun sign is: {{  second_lucky_number  }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card border-dark mb-3" style="max-width: 20rem;">
+                <div class="card-header">Today's Compatibility for {{ second_name }}</div>
+                <div class="card-body">
+                <h4 class="card-title">Which zodiac sign are you compatible with today ?</h4>
+                <p class="card-text">Today you are compatible with: {{  second_compatibility  }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card border-dark mb-3" style="max-width: 20rem;">
+                <div class="card-header">Current Mood for {{ second_name }}</div>
+                <div class="card-body">
+                <h4 class="card-title">How are you today ?</h4>
+                <p class="card-text">Today your mood is: {{  second_current_mood  }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

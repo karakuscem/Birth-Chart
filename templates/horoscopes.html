@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+<form action="/horoscopes" method="post">
+    <div class="form-group">
+        <select id="chart" name="chart">
+            <option value="Natal" id="Natal">Natal</option>
+            <option value="Composite" id="Composite">Synastry</option>
+            <option value="Transit" id="Transit">Transit</option>
+        </select>
+    </div>
+    <br>
+    <button class="btn btn-primary" type="submit">Select Chart</button>
+</form>
+{% endblock %}

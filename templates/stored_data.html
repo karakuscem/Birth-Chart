@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Stored Data
+{% endblock %}
+
+{% block main %}
+<table class="table table-stripped">
+    <thead>
+        <tr>
+            <th class="text-start">Name</th>
+            <th class="text-start">Year</th>
+            <th class="text-start">Month</th>
+            <th class="text-start">Day</th>
+            <th class="text-start">Hour</th>
+            <th class="text-start">Minutes</th>
+            <th class="text-start">Birthplace</th>
+            <th class="text-start">Chart Type</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for data in user_data %}
+        <tr>
+            <td class="text-start"> {{ data["name"] }}</td>
+            <td class="text-start"> {{ data["year"] }}</td>
+            <td class="text-start"> {{ data["month"] }}</td>
+            <td class="text-start"> {{ data["day"]  }}</td>
+            <td class="text-start"> {{ data["hour"] }}</td>
+            <td class="text-start"> {{ data["minutes"] }}</td>
+            <td class="text-start"> {{ data["birthplace"] }}</td>
+            <td class="text-start"> {{ data["chart_type"] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

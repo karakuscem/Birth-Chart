@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Natal Horoscope
+{% endblock %}
+
+{% block main %}
+<div class="alert alert-dismissible alert-success">
+    <strong>Click image</strong> to see full-size.
+</div>
+<br>
+<a href="{{  natal_calculated  }}"><img src="{{  natal_calculated  }}"   width="670" height= "471" class="center"></a>
+<div>
+    <br>
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="card border-dark mb-3" style="max-width: 20rem;">
+                <div class="card-header">Today's Horoscope</div>
+                <div class="card-body">
+                <h4 class="card-title">According to your Sun sign!</h4>
+                <p class="card-text">{{  description  }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card border-dark mb-3" style="max-width: 20rem;">
+                <div class="card-header">Today's Lucky Number</div>
+                <div class="card-body">
+                <h4 class="card-title">Every sign has a lucky number!</h4>
+                <p class="card-text">Today's lucky number according to your Sun sign is: {{  lucky_number  }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card border-dark mb-3" style="max-width: 20rem;">
+                <div class="card-header">Today's Compatibility</div>
+                <div class="card-body">
+                <h4 class="card-title">Which zodiac sign are you compatible with today ?</h4>
+                <p class="card-text">Today you are compatible with: {{  compatibility  }}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card border-dark mb-3" style="max-width: 20rem;">
+                <div class="card-header">Your Current Mood</div>
+                <div class="card-body">
+                <h4 class="card-title">How are you today ?</h4>
+                <p class="card-text">Today your mood is: {{  current_mood  }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
