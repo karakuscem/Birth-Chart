@@ -2,7 +2,7 @@
 
 BirthChart is a web-application that calculates user's birth chart shows their daily horoscope.
 
-## Libaries Used
+## Libraries Used
 
 [kerykeion](https://github.com/g-battaglia/kerykeion)
 [aztro](https://github.com/sameerkumar18/aztro)
