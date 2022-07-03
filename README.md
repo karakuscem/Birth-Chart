@@ -17,12 +17,12 @@ My initial goal was for charts to be selected when filling out the form, but con
 
 As for the Stored Data part, my initial aim was to save the birth information of the users and enable them to access their charts with the click of a button. However, since I could not generate a unique ID for each button, I gave up on this idea and decided to show only the recorded birth information in tabular form. If you would like to contribute to this issue, pull requests are welcome.
 
-![Stored Data](/../BirthChart/images/Stored%20Data.png)
+![Stored Data](https://github.com/karakuscem/Birth-Chart/blob/master/images/Stored%20Data.png)
 
 I used kerkeion library for charts. This library calculates the natal chart and outputs it as an SVG file if you wish. There is also a relationship score calculation feature for the Synastry map. For the daily horoscope, I used the library called aztro. This library is for pulling daily horoscope comments from a particular site. Aztro takes the abbreviated names of the constellations as input, but kerykeion gives the full names of the constellations as output. So I created a dictionary in ***helpers.py*** and changed the value sent by kerykeion to a value that aztro would accept. Thus, a daily horoscope is obtained according to the user's Sun sign in line with the information entered by the user.
 
 ![Birth Chart and Daily Horoscope](https://github.com/karakuscem/Birth-Chart/blob/master/images/Natal%20Chart%20and%20Daily%20Horoscopes.png)
-![Synastry Chart and Daily Horoscope](/../BirthChart/images/Synastry%20chart.png)
+![Synastry Chart and Daily Horoscope](https://github.com/karakuscem/Birth-Chart/blob/master/images/Synastry%20chart.png)
 
 ## Usage
 
